@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: /usr/bin/pipenv run gunicorn -b 0.0.0.0:$PORT src.run:app
+  web: gunicorn src.run:app --bind 0.0.0.0:$PORT
