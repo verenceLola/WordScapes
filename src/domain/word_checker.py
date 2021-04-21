@@ -17,7 +17,7 @@ class WordChecker(object):
 
         return word_permuations
 
-    def find_english_words(self):
+    def find_words(self):
         words = self.find_permutations()
 
         return list(filter(self.dictionary.check, words))

@@ -13,6 +13,6 @@ def english_words():
 
         dictionary = enchant.Dict("en_US")
         checker = WordChecker(dictionary=dictionary, letters=letters)
-        english_words = checker.find_english_words()
+        english_words = checker.find_words()
 
         return jsonify(english_words)
