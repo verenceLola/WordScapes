@@ -1,14 +1,14 @@
 FROM python
 
 WORKDIR /app
-RUN apt-get update && apt-get install -y libenchant-dev pipenv
+RUN apt-get update && apt-get install -y python3-enchant pipenv
 
 COPY . /app
 RUN pipenv lock --requirements > requirements.txt
 
-RUN cat requirements.txt 
+RUN cat requirements.txt
 
-RUN pip3 install -r requirements.txt 
+RUN pip3 install -r requirements.txt
 
 EXPOSE 8000
 
