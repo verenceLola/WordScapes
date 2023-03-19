@@ -16,4 +16,6 @@ Configure your .env file as shown in the sample below
 ```bash
 FLASK_APP=src.run
 FLASK_ENV=development
+
+flask run
 ```

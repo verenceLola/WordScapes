@@ -7,7 +7,6 @@ def create_app():
     from .routes import bp
 
     app.register_blueprint(bp)
-    # app.add_url_rule("/", endpoint="index")
 
     @app.errorhandler(404)
     def not_found(e):
